@@ -18,7 +18,8 @@
     "test:browser": "karma start karma.conf.js --single-run",
     "test:EdgeVM": "npm run test:browser -- --browsers 'EdgeVM'",
     "test:IE11VM": "npm run test:browser -- --browsers 'IE11VM'",
-    "release": "npm run test && npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+    "release": "npm run test && npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
